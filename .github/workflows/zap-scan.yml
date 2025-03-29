@@ -13,7 +13,7 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Change script permission
         run: |
@@ -28,4 +28,3 @@ jobs:
           name: zap report
           path: |
             ./zap_baseline_report.html
-
